@@ -9,119 +9,126 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-background-color: #f5f3e8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f3e8;
 }
 
 /* Header */
 .header-image img {
-width: 100%;
-height: auto;
-object-fit: cover;
-display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 /* Main */
 .main-content {
-flex: 1;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 24px 16px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
 }
 
 .content-wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 24px;
-max-width: 896px;
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 896px;
+  margin: 0 auto;
 }
 
 /* Logo */
 .logo-container img {
-width: 128px;
-height: 128px;
-object-fit: contain;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
 }
 
 /* Content */
 .content-section {
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .headlines h1 {
-font-size: 1.6rem;
-font-weight: 700;
-color: #1f2937;
-margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
 }
 
 .subtitles p {
-font-size: 0.95rem;
-color: #4b5563;
-line-height: 1.4;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.4;
 }
 
 /* Buttons */
 .buttons-container {
-display: flex;
-flex-direction: column;
-gap: 12px;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
 .lang-button {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 8px;
-width: 200px;
-height: 48px;
-font-size: 1rem;
-font-weight: 500;
-background-color: #E61E2A;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #E61E2A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .lang-button:hover {
-background-color: #c41921;
-transform: scale(1.05);
-box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  background-color: #c41921;
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.flag-img {
+  width: 24px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Footer */
 .footer-hint {
-font-size: 0.75rem;
-color: #6b7280;
-margin-top: 12px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 12px;
 }
 
 /* Desktop */
 @media (min-width: 768px) {
-.content-wrapper {
-flex-direction: row;
-gap: 48px;
-}
+  .content-wrapper {
+    flex-direction: row;
+    gap: 48px;
+  }
 
-.content-section {
-text-align: left;
-}
+  .content-section {
+    text-align: left;
+  }
 
-.buttons-container {
-flex-direction: row;
-}
+  .buttons-container {
+    flex-direction: row;
+  }
 }
 </style>
 </head>
@@ -130,52 +137,52 @@ flex-direction: row;
 
 <!-- Header -->
 <div class="header-image">
-<img src="https://cdn.hercules.app/file_EMtgKfPRdF1pPcd6C4cZ7q43"
-alt="Growing Together Header">
+  <img src="images/header.jpg" alt="Growing Together Header">
 </div>
 
 <!-- Main -->
 <div class="main-content">
-<div class="content-wrapper">
+  <div class="content-wrapper">
 
-<!-- Logo -->
-<div class="logo-container">
-<img src="https://cdn.hercules.app/file_pNa8mxhkWCJESAiKAFvntA3W"
-alt="Growing Together Logo">
-</div>
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Growing Together Logo">
+    </div>
 
-<!-- Content -->
-<div class="content-section">
+    <!-- Content -->
+    <div class="content-section">
 
-<div class="headlines">
-<h1>Welcome / 欢迎</h1>
-<div class="subtitles">
-<p>Select your preferred language</p>
-<p>请选择您的首选语言</p>
-</div>
-</div>
+      <div class="headlines">
+        <h1>Welcome / 欢迎</h1>
+        <div class="subtitles">
+          <p>Select your preferred language</p>
+          <p>请选择您的首选语言</p>
+        </div>
+      </div>
 
-<!-- Buttons -->
-<div class="buttons-container">
+      <!-- Buttons -->
+      <div class="buttons-container">
 
-<button class="lang-button"
-onclick="window.location.href='https://enabley.link?linkKey=KqRBXDxW&site=growingtogethercarib'">
-🇺🇸 English
-</button>
+        <button class="lang-button"
+          onclick="window.location.href='https://enabley.link?linkKey=KqRBXDxW&site=growingtogethercarib'">
+          <img src="images/flag-en.png" alt="English" class="flag-img">
+          <span>English</span>
+        </button>
 
-<button class="lang-button"
-onclick="window.location.href='https://enabley.link?linkKey=0Kouyq3L&site=growingtogethercn'">
-🇨🇳 中文
-</button>
+        <button class="lang-button"
+          onclick="window.location.href='https://enabley.link?linkKey=0Kouyq3L&site=growingtogethercn'">
+          <img src="images/flag-zh.png" alt="中文" class="flag-img">
+          <span>中文</span>
+        </button>
 
-</div>
+      </div>
 
-<div class="footer-hint">
-Click to continue / 点击继续
-</div>
+      <div class="footer-hint">
+        Click to continue / 点击继续
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 </div>
 
 </body>
